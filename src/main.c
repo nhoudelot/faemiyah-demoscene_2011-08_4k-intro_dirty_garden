@@ -1338,7 +1338,7 @@ void *environ;
 void *__progname;
 /** \brief Object file starting point.
  */
-void _start()
+void main()
 {
 #endif
 #if defined(USE_LD)
