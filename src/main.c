@@ -56,7 +56,7 @@
 #define SCREEN_B 32
 
 /** Fullscreen on or off. */
-#define SCREEN_F 1
+#define SCREEN_F 0
 
 /** Delay between frames (milliseconds). */
 #define FRAME_TICKS 16
@@ -1382,6 +1382,7 @@ void main()
 #endif
 #endif
 		DDL_SetVideoMode(SCREEN_W, SCREEN_H, SCREEN_B, sdl_flags);
+		SDL_WM_SetCaption("Dirty Garden by Faemiyah",NULL);
 	}
 	DDL_ShowCursor(0);
 #if defined(WIN32)
